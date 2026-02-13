@@ -14,8 +14,11 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased bg-gray-50">
+    <body class="font-sans antialiased bg-gray-50" x-data="{ sidebarOpen: false }">
         <div class="min-h-screen">
+            <!-- Mobile Sidebar Overlay -->
+            <div x-show="sidebarOpen" @click="sidebarOpen = false" class="fixed inset-0 bg-gray-900 bg-opacity-50 z-20 md:hidden transition-opacity"></div>
+
             @include('components.sidebar')
 
             <div class="md:pl-64 flex flex-col flex-1">

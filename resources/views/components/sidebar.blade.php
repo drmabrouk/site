@@ -1,4 +1,4 @@
-<div class="fixed inset-y-0 left-0 w-64 bg-gray-900 text-white transform transition-transform duration-300 -translate-x-full md:translate-x-0 z-30" id="sidebar">
+<div :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full'" class="fixed inset-y-0 left-0 w-64 bg-gray-900 text-white transform transition-transform duration-300 md:translate-x-0 z-30 shadow-2xl md:shadow-none" id="sidebar">
     <div class="p-6">
         <a href="{{ route('dashboard') }}" class="text-2xl font-bold text-blue-400">Jobedia</a>
     </div>
