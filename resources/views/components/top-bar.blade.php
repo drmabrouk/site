@@ -1,5 +1,10 @@
 <header class="fixed top-0 right-0 left-0 md:left-64 bg-white shadow z-20">
     <div class="flex items-center justify-between h-16 px-6">
+        <!-- Mobile Hamburger -->
+        <button @click="sidebarOpen = !sidebarOpen" class="md:hidden p-2 text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg mr-2">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
         <!-- Search -->
         <div class="flex-1 max-w-md hidden md:block">
             <div class="relative">
